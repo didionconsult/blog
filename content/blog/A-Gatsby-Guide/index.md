@@ -5,11 +5,13 @@ description: "A concise reference guide to Gatsby plug-ins"
 ---
 ----------------------------------
 
-<<<<<<< HEAD
+
 🎉 This is my `minimal` guide to `Gatsby` plug-ins.  
-I created a site using the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) from [Kyle Mathews](https://twitter.com/kylemathews).  When referencing plug-ins in this post I am referencing the plug-ins available in the `gatsby-starter-blog`.  There are many more available in the [Starter Library](https://www.gatsbyjs.com/starters/?).
+I created a site using the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) from [Kyle Mathews](https://twitter.com/kylemathews).  
 
 When learning something new I write `guides` for `personal use`. They serve as my go-to reference.  They keep me from Googling repeatedly for answers.   So, I thought I would post them here for reference.
+
+When referencing plug-ins in this post I am referencing the plug-ins available in the `gatsby-starter-blog`.  There are many more available in the [Starter Library](https://www.gatsbyjs.com/starters/?).
 
 #### Plug-ins: (yours may be different 🤓)
 ---------------------------------------------------------------
@@ -24,25 +26,8 @@ When learning something new I write `guides` for `personal use`. They serve as m
 ##### How to change the default prism.js color theme
 - visit [prism.js](https://prismjs.com/plugins/inline-color/) and select your `theme`; i picked `tomorrow night`
 - inside `gatsby-browser.js`, import the following
-```JS
-=======
-🎉 This is my `minimal` guide to `Gatsby` plug-ins. 
-This guide is based on this [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) from [Kyle Mathews](https://twitter.com/kylemathews).
-
-When learning something new I write `guides` for `personal use`. They serve as my go-to reference.  They keep me from Googling repeatedly for answers.  So, I thought I would post them here for reference.
-
-#### Plug-ins: (yours may be different 🤓)
-------------------------------------------------------------------  
-##### Gatsby-remark-prismjs
-[gatsby-remark-prismjs](https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/) - sets custom colors for your code blocks
-- within your markdown files, the text you place inside backticks (```) is formatted according to your prism.js color/theme selections
-- default selections are located in your gatsby-config.js file
-
-##### How to change the default prism.js color theme
-- visit [prism.js](https://prismjs.com/plugins/inline-color/) and select your `theme`; i picked `tomorrow night`
-- inside `gatsby-browser.js`, import the following:
 ```js
->>>>>>> 008849d5c74252a6a07d8ed457114a17972bb4b2
+
 // Highlighting for code blocks
 import "prismjs/themes/prism-tomorrow.css"
 ```
@@ -145,7 +130,6 @@ produces images in multiple sizes and formats
   - gives the user the ability to "install" a website and use it as if it was a natively installed app. 
   - only [partial](https://caniuse.com/web-app-manifest) desktop browser support 
 
-<<<<<<< HEAD
 ##### Gatsby-plug-in-feed     
 [gatsby-plug-in-feed](https://www.gatsbyjs.com/plugins/gatsby-plugin-feed/?=gatsby-plug-in-feed) - creates an `RSS feed` or multiple feeds for the site; subscribers can use [Feedly](https://feedly.com/i/welcome) or RSS Feed Reader
 
@@ -169,7 +153,7 @@ produces images in multiple sizes and formats
 ____________________________________________________________
 =======
 _____________________________________________________________
->>>>>>> 008849d5c74252a6a07d8ed457114a17972bb4b2
+
 
 #### Gatsby Commands
 | **Command**                 | **Use**                  |
@@ -187,10 +171,10 @@ _____________________________________________________________
 gatsby develop -open
 ```
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 008849d5c74252a6a07d8ed457114a17972bb4b2
+
+
+
 - Note: enter gatsby repl in your terminal and wait for the prompt, `gatsby>`
 
 #### Gatsby REPL Commands
@@ -226,7 +210,7 @@ gatsby develop -open
  ```
 
 
-<<<<<<< HEAD
+
  ##### SSG     
 - Gatsby is a `Static Site Generator`  
 - a static site generator is a software application that creates `HTML` pages from `templates` or `components` and a given content source
@@ -243,7 +227,7 @@ How does Gatsby determine the URL slug for each blog entry?
 ##### frontmatter  
 What is frontmatter?  
 - the text located between the two dashed lines in the header of your markdown file
-=======
+
  ##### SSG vs. SSR
 - Gatsby is a `Static Site Generator`
 - a static site generator is a software application that creates `HTML` pages from templates or `components` and a given content source
@@ -255,7 +239,7 @@ What is frontmatter?
 
 ##### frontmatter
 - the text located between the two dashed lines in the header of your markdown file make up the frontmatter
->>>>>>> 008849d5c74252a6a07d8ed457114a17972bb4b2
+
 ```md
 ---
 title: "A Rose in Brooklyn"
