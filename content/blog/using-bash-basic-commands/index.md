@@ -1,17 +1,17 @@
 ---
-title: "Bash Scripting Cheatsheet"
+title: "Using Bash: Commands, PATH and Alias"
 date: "2021-06-09"
-description: 
+description: "Common commands, file navigation and PATH variables"
 ---
 
-#### Bash Scripting Cheatsheet
+#### Bash Scripting 
 
-Here is a quick reference table for common commands.  Commands can be used in both a `bash` or `zsh` Mac OS terminal. If a file is prefixed with ./ this means we are referencing a file in the current directory.
+Here is a quick reference table for common commands.  Commands can be used in both a `bash` or `zsh` Mac OS terminal. If a file is prefixed with `./` this means we are referencing a file in the current directory.
 
-#### Bash Commands
 
-Basic Commands
 
+##### Bash Commands
+---------------------------------------------------------------------------------
 | **Command**                 | **Use**                                      |
 |:--------------------------- | -----------------------------------------------:|
 | cd <file-name>| to change directory; navigate into a folder**|
@@ -21,6 +21,7 @@ Basic Commands
 | pwd      |to find out where you are; print working directory|
 | ls               |prints list of files in the current directory/folder|
 | ls-a                  | prints file list; includes hidden files/folders|
+| ls -la            |shows dot files w/ permission settings for each file|
 | mkdir <folder-name>            	                 |creates folder|
 | touch  <file-name>                                         |    creates file|
 | rm <file-name>                                               |  deletes file*|
@@ -37,29 +38,42 @@ Basic Commands
 - / is your root directory/folder
 
 #### Tilde
-- The shell interprets the character ~ (tilde) at the start of a path to mean “the current user’s home directory”. For example, if Nia's home directory is /Users/nia, then ~/data is equivalent to /Users/nia/data.
+- The shell interprets the character `~` (tilde) at the start of a path to mean “the current user’s home directory”. For example, if Nia's home directory is `/Users/nia`, then `~/data` is equivalent to `/Users/nia/data`.
   
-#### Setting up .bash_profile  
+#### Setting up a .bash_profile (~/.zshrc for zsh) 
 -----------------------------------------
 1. Open new terminal
 2. Enter `ls -a`
-3. This prints a list of files in your home folder; look for a .bash_profile file; if one does not exist we will create one next.
-4. to create the file enter touch .bash_profile
-5. to add alias or update your path see below.
+3. This prints a list of files in your home folder; look for a `.bash_profile` file; if one does not exist we will create one next.
+4. to create the file enter `touch .bash_profile`
+5. navigate into your new profile; type `nano ~/.bash_profile`
+5. to add an `alias` or update your `PATH` see below.
 
-#### Adding an alias   
+#### Adding an alias to .bash_profile
 -------------------------------
+1. Open a new terminal
+2. navigate into your `bash_profile`; type `nano ~/.bash_profile`
+3. in the nano editor add an `alias` type `alias command='original-command'`  
+- Examples:
+```bash
+alias pip='pip3'
+alias c='clear'
+alias commit='com'
+```
 
-#### Path  
+[blondiebytes](https://www.youtube.com/channel/UC4DwZ2VXM2KWtzHjVk9M_xg) has a great video [tutorial](https://youtu.be/Ap5rfq93AY4) for visual learners.
+
+
+#### PATH  
 ------------------------------
 Files read by a new shell upon opening, listed in order:
-- /etc/profile (exe automatically at login)
-- .bash_profile
-- ~.bash_login
-- ~.profile
-- ~/.bashrc
+- `/etc/profile` (exe automatically at login)
+- `.bash_profile`
+- `~.bash_login`
+- `~.profile`
+- `~/.bashrc`
 
-When adding files to your PATH:
+
 
 ##### Advanced Commands
 ---------------------------------------------------
@@ -80,6 +94,7 @@ When adding files to your PATH:
 | #!                      | shebang prefix; makes file an executable|
 | bash <file-name>            | runs the commands saved in a file|
 | which bash | prints where the bash interpreter is located prior to running a script | 
+-------------------------------------------------------------------------------
 
 Example script file:
 ```bash
@@ -89,46 +104,8 @@ Example script file:
 
 echo Hello world! # => Hello world!
 ```
-Setting up a cron job on Mac OSX:
-------------------------------------------------
-- open your terminal
-- navigate to home using cd~/ or cd
-- this is Users/Amy for me
-- type crontab -e
-note: to check and see if you have a crontab file type crontab -l, navigate to that crontab file if you do, if you do not continue from step four
-- Vi is the default text editor for cron, if your unfamiliar with the [vi](http://commandlinemac.blogspot.com/2008/12/vim.html) editor use the simple commands below or 
-- type or paste the crontab file 
-- press `esc` then type `:wq` to save and exit
 
+Resources   
+[Bash Hackers Wiki](https://wiki.bash-hackers.org/)  
 
-- use the [Crontab Generator](https://crontab-generator.org/)
-
-Vi operates by shifting to different `modes`, for example:
-- to begin **writing text** after opening the file hit `esc` and then `i`.
-- to begin **deleting text** type `x`, then press the `delete` key
-- to **save and exit** press `esc` then :wq
-- to **exit without saving** press `esc` then :q!
- For each task you must shift to the correct mode before doing so.
-
-##### Vi Commands
-
-| **Command**          | **Use**                                      |
-|:--------------------------- | -----------------------------------------:|
-| i                                   | insert mode; insert characters|
-| x          |delete mode; deletes one character at a time|
-| dw |                                      deletes word after cursor|
-| Esc | exit insert mode; stop writing text to the file to prepare to save and exit|
-| :wq                                             | write to file and quit|
-| :q!                    | quit without saving changes and exit|
--------------------------------------------------------------------------
-
-
-
-
-
-
-Resources. 
-[Bash Hackers Wiki](https://wiki.bash-hackers.org/)
-[Cronitor](https://crontab.guru/every-5-minutes)
-[CoreNominal, How to Setup a Crontab file](https://corenominal.org/2016/05/12/howto-setup-a-crontab-file/)
 

@@ -51,7 +51,7 @@ pre[class*="language-"] {
   overflow: auto;
   background: #fcfaf5;
   /* offset-x | offset-y | blur-radius | spread-radius | color  */
-  box-shadow: 0px -1px rgba(239, 175, 165, 0.50), rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: 0px -3px rgba(239, 175, 165, 0.50), rgba(0, 0, 0, 0.04) 0px 3px 5px;
   
   
 }
@@ -140,10 +140,41 @@ pre[class*="language-"] > code[class*="language-"] {
   right: 0;
   padding: inherit 0;
   margin-top: 1em;
-  background: #fbf0ea;
-  box-shadow: inset 5px 0 0 #f2beb6;
+  background: rgba(242, 190, 182, 0.95);
+  box-shadow: inset 5px 0 0 rgb(242, 190, 182);
   z-index: 0;
   pointer-events: none;
   line-height: inherit;
   white-space: pre;
 }
+
+/* Tags */
+
+/*.gatsby-highlight pre[class*="language-"]::before {  
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  left: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0px;
+}
+*/
+.gatsby-highlight pre[class="language-js"]::before {
+  content: "JS";
+  background: rgb(247, 223, 30);
+}  
+
+.gatsby-highlight pre[class="language-md"]::before {
+  content: "MD";
+  background: rgb(244, 146, 211);
+}  
+
+.gatsby-highlight pre[class="language-css"]::before {
+  content: "CSS";
+  background: rgb(247, 156, 72);
+} 
+
+
+
+
+
