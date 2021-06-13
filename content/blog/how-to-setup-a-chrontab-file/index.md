@@ -3,6 +3,7 @@ title: "How to Set-up a Chrontab file"
 date: "2021-06-10"
 description: "A short tutorial on creating cronjobs"
 ---
+How to set up a cron job in the terminal has seemed overwhelming for quite some time.  But after familiarizing myself with Vi the job seemed simpler to approach.  Here is a quick tutorial on navigating Vi and setting up a simple cron job.
 
 #### Setting up a cron job ⏰
 ------------------------------------------------
