@@ -1,13 +1,13 @@
 ---
 title: Playing with Markdown
 date: "2015-05-01T22:12:03.284Z"
-description: "Where I randomly play with Markdown"
+description: "Where I randomly play with Markdown 🍓"
 ---
 
-So I have been wanting to set up a Gatsby blog for a while now but was a bit intimidated.
-I spent time looking at all of the examples out there which were inspiring and numerous.
+<span style="background-color:lavenderblush"> So I have been wanting to set up a Gatsby blog for a while now but was a bit intimidated.
+I spent time looking at all of the examples out there which were inspiring and numerous.</span>
 
-I installed Gatsby.
+I installed <span style="background-color:lavenderblush">Gatsby.</span>
 Then I began taking notes.
 But the best part was that I found [@k88hudson’s](@k88hudson’s ) [Prism Theme Generator](http://k88hudson.github.io/syntax-highlighting-theme-generator/www/) to generate a custom css template for prism.js.
 

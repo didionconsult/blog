@@ -1,7 +1,7 @@
 ---
 title: "Async Notes"
 date: "2021-06-06T20:12:03.284Z"
-description: "An async cheatsheet"
+description: "An async cheatsheet 📝"
 ---
 
 ### Async 📝

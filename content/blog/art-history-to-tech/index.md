@@ -1,7 +1,7 @@
 ---
 title: "From Art History to Tech"
 date: "2021-06-06T22:12:03.284Z"
-description: "Switching careers from textiles to tech"
+description: "Switching careers from textiles to tech 🖼️"
 ---
 Moving to the tech industry after working in creative fields was a smaller change than I expected but hardly one I might have predicted.
 

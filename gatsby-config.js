@@ -51,6 +51,9 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-styled-components`,
+    `babel-plugin-styled-components`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {

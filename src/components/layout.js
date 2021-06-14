@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Footer from "./footer.js"
+import NavBar from "./nav/Navbar.js"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -22,6 +23,8 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
+    <>
+    <NavBar/>
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
@@ -30,6 +33,7 @@ const Layout = ({ location, title, children }) => {
       <Footer/>
       </div>
     </div>
+    </>
   )
 }
 

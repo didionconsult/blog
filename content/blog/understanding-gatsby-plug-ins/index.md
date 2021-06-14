@@ -1,7 +1,7 @@
 ---
 title: "Understanding Gatsby Plug-ins"
 date: "2021-06-07"
-description: "A concise reference guide to Gatsby plug-ins"
+description: "A concise reference guide to Gatsby plug-ins 🔌"
 ---
 ----------------------------------
 

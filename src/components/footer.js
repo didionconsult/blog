@@ -1,6 +1,4 @@
 import * as React from "react"
-
-
 import gatsby from '../images/gatsby-icon.png'
 import graphql from '../images/graphql.svg'
 import netlify from '../images/netlify.svg'
@@ -14,10 +12,9 @@ function Footer() {
         style={{
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-between`,
+          justifyContent: `flex-end`,
           listStyle: `none`,
-          textDecoration: `none`,
-          padding: 0,
+          padding: `32px`,
         }}
         >
           <li>
@@ -37,7 +34,7 @@ function Footer() {
             title="Hosted by Netlify"
             target="_blank"
             rel="noopener noreferrer"
-            className="img"
+            className="img-netlify"
           >
             <img src={netlify} className="footer-netlify-icon" alt="Netlify" />
           </a>

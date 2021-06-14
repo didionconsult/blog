@@ -1,7 +1,7 @@
 ---
 title: NPM Commands
 date: "2015-05-06T23:46:37.121Z"
-description: "An NPM cheatsheet for quick reference"
+description: "An NPM cheatsheet for quick reference 😊"
 ---
 I have put together a short table of NPM commands to use as a quick reference guide.  These are the commands I found I used most often, perhaps forgot most often. I am a newish programmer so I have excluded more advanced commands. Send 📝 me any you feel are missing! 😊 
 

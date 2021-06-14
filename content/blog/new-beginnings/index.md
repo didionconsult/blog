@@ -1,7 +1,7 @@
 ---
-title: GraphQL Notes 🍓
+title: GraphQL Notes 
 date: "2021-05-28T22:40:32.169Z"
-description: "A review of core concepts used in GraphQL."
+description: "A review of core concepts used in GraphQL. 📈"
 tags: "graphql" 
 ---
 
