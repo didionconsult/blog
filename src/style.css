@@ -93,11 +93,10 @@ hr {
   background: var(--color-accent);
   height: 1px;
   border: 0;
+  margin-bottom: 32px;
 }
 
 /* Heading */
-
-
 
 h1,
 h2,
@@ -244,7 +243,6 @@ a {
 a:hover,
 a:focus {
   color: hotpink;
-  background-image: linear-gradient(to bottom, hotpink 33%, transparent 33%, transparent 66%, hotpink 66%, hotpink);
   background-position: 0 1.03em;
   background-repeat: repeat-x;
   background-size: 2px 6px;
@@ -321,7 +319,6 @@ a:focus {
 .blog-post header p {
   font-size: var(--fontSize-2);
   font-family: var(--font-heading);
-
 }
 
 .blog-post-nav ul {
@@ -331,6 +328,53 @@ a:focus {
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
+
+.footer-nav {
+  margin: var(--spacing-0); 
+}
+
+.footer-nav hr {
+  padding: 20px 20px;
+}
+
+.footer-div {
+  margin: var(--spacing-0);
+}
+
+.section-footer {
+  margin: var(--spacing-0);
+}
+
+.footer-gatsby-icon {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  height: 25px;
+  width: 25px;
+}
+
+.footer-netlify-icon {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  height: 25px;
+  width: 25px;
+}
+
+.footer-graphql-icon {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  height: 25px;
+  width: 25px;
+}
+
+.footer-github-icon {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  height: 25px;
+  width: 25px;
+}
+
+
+
 
 /* Media queries */
 
